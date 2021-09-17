@@ -11,8 +11,8 @@ function play(action){
     playerSelection = action;
     machineSelection = Math.floor(Math.random() * options.length);
 
-    playerSelectionImg.src = "../assets/option" + action + ".png";
-    machineSelectionImg.src = "../assets/option" + machineSelection + ".png";
+    playerSelectionImg.src = "./assets/option" + action + ".png";
+    machineSelectionImg.src = "./assets/option" + machineSelection + ".png";
 
     if(playerSelection == machineSelection) resultText("Empate!");
     else if (playerSelection == 0 && machineSelection == 2 ||
@@ -27,8 +27,8 @@ function reset() {
     playerSelection = undefined;
     machineSelection = undefined;
 
-    playerSelectionImg.src = "../assets/question.png";
-    machineSelectionImg.src = "../assets/question.png";
+    playerSelectionImg.src = "./assets/question.png";
+    machineSelectionImg.src = "./assets/question.png";
 
     resultTxt.textContent = "Resultado";
     cover.classList.remove("active-cover");
