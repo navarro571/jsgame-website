@@ -10,7 +10,6 @@ const cover = document.querySelector(".action-panel__cover");
 function play(action){
     playerSelection = action;
     machineSelection = Math.floor(Math.random() * options.length);
-
     playerSelectionImg.src = "./assets/option" + action + ".png";
     machineSelectionImg.src = "./assets/option" + machineSelection + ".png";
 
