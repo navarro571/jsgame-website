@@ -2,10 +2,10 @@ const options = ["stone", "paper", "scissor"];
 let playerSelection;
 let machineSelection;
 
-const resultTxt = document.querySelector("#result-text");
+const resultTxt = document.querySelector(".result-text");
 const playerSelectionImg = document.querySelector("#playerSelectionImg");
 const machineSelectionImg = document.querySelector("#machineSelectionImg");
-const cover = document.querySelector(".action-panel__cover");
+const cover = document.querySelector(".cover");
 
 function play(action){
     playerSelection = action;

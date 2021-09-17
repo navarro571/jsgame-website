@@ -1,60 +1,52 @@
 @import "data";
 
-.container__action-panel{
+.action-panel{
     height: 300px;
     width: 600px;
     position: relative;
-}
-.action-panel__form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.action-panel__form label {
-    color: $textcolor;
-    font-size: 26px;
-    margin: 40px 0px;
-}
-.action-panel__form--buttons{
-    display: flex;
-    justify-self: center;
-}
-.selection-button {
-    background-color: transparent;
-    padding: 20px;
-    border: 2px solid $bordercolor;
-    border-radius: 50%;
-    margin: 0px 30px;
-}
-.selection-button:hover {
-    background-color: white;
-    box-shadow: 0px 0px 4px 4px rgba(white, 0.2);
-}
-.action-panel__cover {
-    background: linear-gradient(to bottom, rgba(0,0,0,0.3), transparent);
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    border-radius: 30px;
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
-.active-cover {
-    display: flex;
-}
-.button {
-    background-color: $endcolor;
-    color: $textcolor;
-    font-size: 18px;
-    border: 1px solid $bordercolor;
-    border-radius: 30px;
-    height: 60px;
-    width: 250px;
-}
-.button:hover {
-    background-color: $startcolor;
-    box-shadow: 0px 0px 4px 4px rgba(white, 0.2);
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        label {
+            color: $textcolor;
+            font-size: 26px;
+            margin: 40px 0px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-self: center;
+
+            .selection-button {
+                background-color: transparent;
+                padding: 20px;
+                border: 2px solid $bordercolor;
+                border-radius: 50%;
+                margin: 0px 30px;
+
+                &:hover {
+                    background-color: white;
+                    box-shadow: 0px 0px 4px 4px rgba(white, 0.2);
+                }
+            }
+        }
+    }
+    .cover {
+        background: linear-gradient(to bottom, rgba(0,0,0,0.3), transparent);
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        border-radius: 30px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .active-cover {
+        display: flex;
+    }
 }

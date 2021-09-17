@@ -1,45 +1,43 @@
 @import "data";
 
-.container {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .container__game-name {
-    font-style: 24px;
-    color: $textcolor;
-    margin-bottom: 50px;
-  }
-  .container__result {
-    margin-bottom: 60px;
-    border: 2px solid $textcolor;
-    border-radius: 30px;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .container__result--sections {
+.game-name {
+  font-style: 24px;
+  color: $textcolor;
+  margin-bottom: 50px;
+}
+
+.result {
+  margin-bottom: 60px;
+  border: 2px solid $textcolor;
+  border-radius: 30px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .sections {
     color: $textcolor;
     display: flex;
     align-items: center;
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px 30px;
+
+      h3 {
+        margin-bottom: 10px;
+      }
+
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
   }
-  .section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px 30px;
+  .result-text {
+    color: white;
+    font-size: 18px;
   }
-  .section h3 {
-    margin-bottom: 10px;
-  }
-  .section img{
-      width: 100px;
-      height: 100px;
-  }
-  .containter__result--result-text {
-      color: white;
-      font-size: 18px;
-  }
+}

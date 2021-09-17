@@ -18,6 +18,13 @@ body {
   background: linear-gradient(to bottom, $startcolor 10%, $endcolor 90%);
   width: 100%;
 }
+.container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 @import "components/result";
 @import "components/actions";
 
@@ -29,4 +36,18 @@ footer {
   align-items: center;
   color: $textcolor;
   font-size: 16px;
+}
+
+.button {
+  background-color: $endcolor;
+  color: $textcolor;
+  font-size: 18px;
+  border: 1px solid $bordercolor;
+  border-radius: 30px;
+  height: 60px;
+  width: 250px;
+  &:hover {
+    background-color: $startcolor;
+    box-shadow: 0px 0px 4px 4px rgba(white, 0.2);
+  }
 }

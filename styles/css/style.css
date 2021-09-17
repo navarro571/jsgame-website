@@ -17,7 +17,6 @@ header {
   display: flex;
   align-items: center;
 }
-
 .header__container h2 {
   color: white;
 }
@@ -35,13 +34,13 @@ body {
   align-items: center;
 }
 
-.container__game-name {
+.game-name {
   font-style: 24px;
   color: white;
   margin-bottom: 50px;
 }
 
-.container__result {
+.result {
   margin-bottom: 60px;
   border: 2px solid white;
   border-radius: 30px;
@@ -50,71 +49,60 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
-.container__result--sections {
+.result .sections {
   color: white;
   display: flex;
   align-items: center;
 }
-
-.section {
+.result .sections .section {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 10px 30px;
 }
-
-.section h3 {
+.result .sections .section h3 {
   margin-bottom: 10px;
 }
-
-.section img {
+.result .sections .section img {
   width: 100px;
   height: 100px;
 }
-
-.containter__result--result-text {
+.result .result-text {
   color: white;
   font-size: 18px;
 }
 
-.container__action-panel {
+.action-panel {
   height: 300px;
   width: 600px;
   position: relative;
 }
-
-.action-panel__form {
+.action-panel .form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.action-panel__form label {
+.action-panel .form label {
   color: white;
   font-size: 26px;
   margin: 40px 0px;
 }
-
-.action-panel__form--buttons {
+.action-panel .form .buttons {
   display: flex;
   justify-self: center;
 }
-
-.selection-button {
+.action-panel .form .buttons .selection-button {
   background-color: transparent;
   padding: 20px;
   border: 2px solid white;
   border-radius: 50%;
   margin: 0px 30px;
 }
-
-.selection-button:hover {
+.action-panel .form .buttons .selection-button:hover {
   background-color: white;
   box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.2);
 }
-
-.action-panel__cover {
+.action-panel .cover {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent);
   position: absolute;
   top: 0px;
@@ -126,9 +114,18 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.active-cover {
+.action-panel .active-cover {
   display: flex;
+}
+
+footer {
+  background-color: #4a4e69;
+  height: 10vh;
+  margin: auto 0px 0px 30px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 16px;
 }
 
 .button {
@@ -140,20 +137,9 @@ body {
   height: 60px;
   width: 250px;
 }
-
 .button:hover {
   background-color: #22223b;
   box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.2);
-}
-
-footer {
-  background-color: #4a4e69;
-  height: 10vh;
-  margin: auto 0px 0px 30px;
-  display: flex;
-  align-items: center;
-  color: white;
-  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

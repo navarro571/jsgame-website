@@ -18,25 +18,25 @@
     </header>
     <main>
         <div class="container">
-            <h1 class="container__game-name">Piedra Papel o Tijera!</h1>
-            <section class="container__result">
-                <div class="container__result--sections">
+            <h1 class="game-name">Piedra Papel o Tijera!</h1>
+            <section class="result">
+                <div class="sections">
                     <div class="section">
                         <h3>Tu elección</h3>
                         <img id="playerSelectionImg" src="./assets/question.png" alt="undefined">
                     </div>
-                    <h4 class="containter__result--vs">VS</h4>
+                    <h4>VS</h4>
                     <div class="section">
                         <h3>Maquina</h3>
                         <img id="machineSelectionImg" src="./assets/question.png" alt="undefined">
                     </div>
                 </div>
-                <h4 id="result-text" class="containter__result--result-text">Resultado</h4>
+                <h4 class="result-text">Resultado</h4>
             </section>
-            <section class="container__action-panel">
-                <form onSubmit="return false" class="action-panel__form">
+            <section class="action-panel">
+                <form onSubmit="return false" class="form">
                     <label>Selecciona tu jugada!</label>
-                    <div class="action-panel__form--buttons">
+                    <div class="buttons">
                         <button class="selection-button" onclick="play(0)">
                             <img src="assets/option0.png" alt="stone">
                         </button>
@@ -48,14 +48,14 @@
                         </button>
                     </div>
                 </form>
-                <div class="action-panel__cover">
+                <div class="cover">
                     <button class = "button" onclick="reset()">Intentar de nuevo</button>
                 </div>
             </section>
         </div>
     </main>
     <footer>
-        <div class="footer__container">
+        <div>
             <p>©Derechos reservados: @Navarro</p>
         </div>
     </footer>
