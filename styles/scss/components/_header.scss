@@ -1,0 +1,12 @@
+@import "data";
+
+.header__container {
+    height: 10vh;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.header__container h2 {
+    color: $textcolor;
+}

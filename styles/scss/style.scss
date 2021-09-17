@@ -1,0 +1,32 @@
+@import "components/data";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+header {
+  background-color: $startcolor;
+  width: 100%;
+}
+@import "components/header";
+
+body {
+  background: linear-gradient(to bottom, $startcolor 10%, $endcolor 90%);
+  width: 100%;
+}
+@import "components/result";
+@import "components/actions";
+
+footer {
+  background-color: $endcolor;
+  height: 10vh;
+  margin: auto 0px 0px 30px;
+  display: flex;
+  align-items: center;
+  color: $textcolor;
+  font-size: 16px;
+}
