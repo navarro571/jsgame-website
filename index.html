@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,11 @@
     <link rel="stylesheet" href="./styles/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Noto+Sans+JP:wght@300&display=swap"
+        rel="stylesheet">
     <title>Game</title>
 </head>
+
 <body>
     <header>
         <div class="header__container">
@@ -23,33 +26,33 @@
                 <div class="sections">
                     <div class="section">
                         <h3>Tu elección</h3>
-                        <img id="playerSelectionImg" src="./assets/question.png" alt="undefined">
+                        <img id="playerimg" src="./assets/question.png" alt="undefined">
                     </div>
                     <h4>VS</h4>
                     <div class="section">
                         <h3>Maquina</h3>
-                        <img id="machineSelectionImg" src="./assets/question.png" alt="undefined">
+                        <img id="machineimg" src="./assets/question.png" alt="undefined">
                     </div>
                 </div>
                 <h4 class="result-text">Resultado</h4>
             </section>
             <section class="action-panel">
-                <form onSubmit="return false" class="form">
+                <form class="form">
                     <label>Selecciona tu jugada!</label>
                     <div class="buttons">
-                        <button class="selection-button" onclick="play(0)">
+                        <button type="button" id="btn-stone" class="selection-button">
                             <img src="assets/option0.png" alt="stone">
                         </button>
-                        <button class="selection-button" onclick="play(1)">
+                        <button type="button" id="btn-paper" class="selection-button">
                             <img src="assets/option1.png" alt="paper">
                         </button>
-                        <button class="selection-button" onclick="play(2)">
+                        <button type="button" id="btn-scissor" class="selection-button">
                             <img src="assets/option2.png" alt="scissor">
                         </button>
                     </div>
                 </form>
                 <div class="cover">
-                    <button class = "button" onclick="reset()">Intentar de nuevo</button>
+                    <button id="btn-reset" class="button">Intentar de nuevo</button>
                 </div>
             </section>
         </div>
@@ -59,6 +62,7 @@
             <p>©Derechos reservados: @Navarro</p>
         </div>
     </footer>
-    <script src="./scripts/game.js"></script>
+    <script type="module" src="./js/index.js"></script>
 </body>
+
 </html>
