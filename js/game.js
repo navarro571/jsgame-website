@@ -25,11 +25,11 @@ const GameRules = {
   },
 };
 
-export function play(action) {
-  const playerOption = GameRules[options[action]];
+export function play(option) {
+  const playerOption = GameRules[options[option]];
   const machineOption = RandomArray(options);
 
-  playerImg.src = `./assets/option${action}.png`;
+  playerImg.src = `./assets/option${option}.png`;
   machineImg.src = `./assets/option${options.indexOf(machineOption)}.png`;
 
   if (machineOption == playerOption.win) result("Ganaste!");
